@@ -169,7 +169,7 @@ static void xTaskEscritura(void *pvParameters)
 
 int main(void)
 {
-	//Éste es el segundo commit para probar !!!
+	//Ahora es el tercer commit para prueba !
 
 	/*Configuración inicial del microcontrolador*/
 	Inicializar ();

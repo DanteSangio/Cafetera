@@ -71,7 +71,7 @@ static void vTaskLectura(void *pvParameters)
 	while (1)
 	{
 		Buffer.tiempo = 0;
-
+/*
 		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(UP_KEY_PORT) , PIN(UP_KEY_PIN)) == (bool)PRESSED )
 		{
 			Buffer.puerto = PORT(RED_PORT);
@@ -99,7 +99,7 @@ static void vTaskLectura(void *pvParameters)
 			Buffer.pin = 	PIN(RED_PIN);
 			Buffer.tiempo = ALL_LEDs;
 		}
-
+*/
 		if( Buffer.tiempo != 0 )
 		{
 			xQueueSendToBack( Cola_1 , &Buffer , portMAX_DELAY );
@@ -121,16 +121,16 @@ static void vTaskLectura(void *pvParameters)
 static void xTaskEscritura(void *pvParameters)
 {
 	LED_GPIO LED_RGB;
-
+/*
 	uint8_t 	Puerto;
 	uint8_t 	Pin;
 	uint32_t 	Tiempo;
 	uint32_t 	Veces;
-
+*/
 	while (1)
 	{
 		xQueueReceive( Cola_2 , &LED_RGB , portMAX_DELAY );
-
+/*
 		if ( LED_RGB.tiempo != ALL_LEDs )
 		{
 			Puerto = 	LED_RGB.puerto;
@@ -154,7 +154,7 @@ static void xTaskEscritura(void *pvParameters)
 				vTaskDelay( 500 / portTICK_PERIOD_MS );
 			}
 		}
-
+*/
 		/*
 		xSemaphoreTake(Semaforo_1 , portMAX_DELAY );
 

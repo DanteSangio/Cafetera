@@ -1238,9 +1238,9 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Firmware/src/Driver/DriverTimer.o
  .debug_macro   0x00000000       0xca ./Firmware/src/Driver/DriverTimer.o
  .debug_macro   0x00000000       0x18 ./Firmware/src/Driver/DriverTimer.o
- .debug_macro   0x00000000       0xa0 ./Firmware/src/Driver/DriverTimer.o
+ .debug_macro   0x00000000      0x27b ./Firmware/src/Driver/DriverTimer.o
  .debug_line    0x00000000      0x482 ./Firmware/src/Driver/DriverTimer.o
- .debug_str     0x00000000    0x10820 ./Firmware/src/Driver/DriverTimer.o
+ .debug_str     0x00000000    0x11009 ./Firmware/src/Driver/DriverTimer.o
  .comment       0x00000000       0x6f ./Firmware/src/Driver/DriverTimer.o
  .debug_frame   0x00000000       0x50 ./Firmware/src/Driver/DriverTimer.o
  .ARM.attributes
@@ -1346,7 +1346,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./Firmware/src/Driver/Init.o
  .debug_macro   0x00000000       0xca ./Firmware/src/Driver/Init.o
  .debug_macro   0x00000000       0x18 ./Firmware/src/Driver/Init.o
- .debug_macro   0x00000000       0xa0 ./Firmware/src/Driver/Init.o
+ .debug_macro   0x00000000      0x27b ./Firmware/src/Driver/Init.o
  .debug_macro   0x00000000       0x10 ./Firmware/src/Driver/Init.o
  .debug_macro   0x00000000       0xe8 ./Firmware/src/Driver/Init.o
  .debug_macro   0x00000000      0x168 ./Firmware/src/Driver/Init.o
@@ -1475,10 +1475,10 @@ Discarded input sections
  .debug_macro   0x00000000       0x94 ./Firmware/src/App/Aplicacion.o
  .debug_macro   0x00000000       0x78 ./Firmware/src/App/Aplicacion.o
  .debug_macro   0x00000000       0x82 ./Firmware/src/App/Aplicacion.o
- .debug_macro   0x00000000       0xa0 ./Firmware/src/App/Aplicacion.o
+ .debug_macro   0x00000000      0x27b ./Firmware/src/App/Aplicacion.o
  .debug_macro   0x00000000       0x64 ./Firmware/src/App/Aplicacion.o
  .debug_line    0x00000000      0x7b8 ./Firmware/src/App/Aplicacion.o
- .debug_str     0x00000000    0x153b6 ./Firmware/src/App/Aplicacion.o
+ .debug_str     0x00000000    0x15b9f ./Firmware/src/App/Aplicacion.o
  .comment       0x00000000       0x6f ./Firmware/src/App/Aplicacion.o
  .debug_frame   0x00000000      0x100 ./Firmware/src/App/Aplicacion.o
  .ARM.attributes
@@ -2026,7 +2026,7 @@ END GROUP
                 0x20084000                __top_RamAHB32 = 0x20084000
                 0x20084000                __top_RAM2 = 0x20084000
 
-.text           0x00000000     0x2e28
+.text           0x00000000     0x2c34
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -2035,10 +2035,10 @@ END GROUP
                 0x000000cc                . = ALIGN (0x4)
                 0x000000cc                __section_table_start = .
                 0x000000cc                __data_section_table = .
-                0x000000cc        0x4 LONG 0x2e28 LOADADDR (.data)
+                0x000000cc        0x4 LONG 0x2c34 LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000d4        0x4 LONG 0x4 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x2e28 LOADADDR (.data_RAM2)
+                0x000000d8        0x4 LONG 0x2c34 LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                __data_section_table_end = .
@@ -2247,254 +2247,248 @@ END GROUP
                 0x00001a90                pvTaskIncrementMutexHeldCount
  .text.prvAddCurrentTaskToDelayedList
                 0x00001ab8       0xcc ./freeRTOS/src/tasks.o
- .text.Chip_GPIO_SetPinState
-                0x00001b84       0x68 ./Firmware/src/Main/main.o
- .text.Chip_GPIO_GetPinState
-                0x00001bec       0x38 ./Firmware/src/Main/main.o
  .text.Chip_GPIO_SetPinOutHigh
-                0x00001c24       0x2c ./Firmware/src/Main/main.o
+                0x00001b84       0x2c ./Firmware/src/Main/main.o
  .text.Chip_GPIO_SetPinOutLow
-                0x00001c50       0x2c ./Firmware/src/Main/main.o
- .text.Chip_GPIO_SetPinToggle
-                0x00001c7c       0x4c ./Firmware/src/Main/main.o
- .text.vTask1   0x00001cc8       0x48 ./Firmware/src/Main/main.o
- .text.xTask2   0x00001d10       0x48 ./Firmware/src/Main/main.o
+                0x00001bb0       0x2c ./Firmware/src/Main/main.o
+ .text.vTask1   0x00001bdc       0x48 ./Firmware/src/Main/main.o
+ .text.xTask2   0x00001c24       0x48 ./Firmware/src/Main/main.o
  .text.vTaskLectura
-                0x00001d58       0xc0 ./Firmware/src/Main/main.o
+                0x00001c6c       0x2c ./Firmware/src/Main/main.o
  .text.xTaskEscritura
-                0x00001e18       0x94 ./Firmware/src/Main/main.o
- .text.main     0x00001eac      0x144 ./Firmware/src/Main/main.o
-                0x00001eac                main
+                0x00001c98       0x20 ./Firmware/src/Main/main.o
+ .text.main     0x00001cb8      0x144 ./Firmware/src/Main/main.o
+                0x00001cb8                main
  .text.SystemInit
-                0x00001ff0       0x24 ./Firmware/src/Main/sysinit.o
-                0x00001ff0                SystemInit
- .text.InitADC  0x00002014        0xc ./Firmware/src/Driver/DriverADC.o
-                0x00002014                InitADC
+                0x00001dfc       0x24 ./Firmware/src/Main/sysinit.o
+                0x00001dfc                SystemInit
+ .text.InitADC  0x00001e20        0xc ./Firmware/src/Driver/DriverADC.o
+                0x00001e20                InitADC
  .text.Chip_GPIO_Init
-                0x00002020       0x18 ./Firmware/src/Driver/DriverGPIO.o
+                0x00001e2c       0x18 ./Firmware/src/Driver/DriverGPIO.o
  .text.Chip_GPIO_SetPinDIROutput
-                0x00002038       0x38 ./Firmware/src/Driver/DriverGPIO.o
+                0x00001e44       0x38 ./Firmware/src/Driver/DriverGPIO.o
  .text.Chip_GPIO_SetPinDIRInput
-                0x00002070       0x3c ./Firmware/src/Driver/DriverGPIO.o
+                0x00001e7c       0x3c ./Firmware/src/Driver/DriverGPIO.o
  .text.Chip_GPIO_SetPinDIR
-                0x000020ac       0x44 ./Firmware/src/Driver/DriverGPIO.o
+                0x00001eb8       0x44 ./Firmware/src/Driver/DriverGPIO.o
  .text.Chip_GPIO_SetDir
-                0x000020f0       0x34 ./Firmware/src/Driver/DriverGPIO.o
+                0x00001efc       0x34 ./Firmware/src/Driver/DriverGPIO.o
  .text.InitGPIOs
-                0x00002124       0x38 ./Firmware/src/Driver/DriverGPIO.o
-                0x00002124                InitGPIOs
+                0x00001f30       0x38 ./Firmware/src/Driver/DriverGPIO.o
+                0x00001f30                InitGPIOs
  .text.TIMER0_IRQHandler
-                0x0000215c        0xc ./Firmware/src/Driver/DriverIRQ.o
-                0x0000215c                TIMER0_IRQHandler
- .text.InitRTC  0x00002168        0xc ./Firmware/src/Driver/DriverRTC.o
-                0x00002168                InitRTC
+                0x00001f68        0xc ./Firmware/src/Driver/DriverIRQ.o
+                0x00001f68                TIMER0_IRQHandler
+ .text.InitRTC  0x00001f74        0xc ./Firmware/src/Driver/DriverRTC.o
+                0x00001f74                InitRTC
  .text.InitUART0
-                0x00002174        0xc ./Firmware/src/Driver/DriverSerie.o
-                0x00002174                InitUART0
- .text.InitTFT  0x00002180        0xc ./Firmware/src/Driver/DriverTFT.o
-                0x00002180                InitTFT
+                0x00001f80        0xc ./Firmware/src/Driver/DriverSerie.o
+                0x00001f80                InitUART0
+ .text.InitTFT  0x00001f8c        0xc ./Firmware/src/Driver/DriverTFT.o
+                0x00001f8c                InitTFT
  .text.Inicializar
-                0x0000218c       0x20 ./Firmware/src/Driver/Init.o
-                0x0000218c                Inicializar
+                0x00001f98       0x20 ./Firmware/src/Driver/Init.o
+                0x00001f98                Inicializar
  .text.SystemCoreClockUpdate
-                0x000021ac       0x18 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x000021ac                SystemCoreClockUpdate
+                0x00001fb8       0x18 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x00001fb8                SystemCoreClockUpdate
  .text.Chip_Clock_IsMainPLLEnabled
-                0x000021c4       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00001fd0       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x000021e8       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00001ff4       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_FeedPLL
-                0x0000220c       0x34 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002018       0x34 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLSource
-                0x00002240       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000204c       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainOscRate
-                0x00002260       0x14 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000206c       0x14 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetIntOscRate
-                0x00002274       0x14 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002080       0x14 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x00002288       0x14 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002094       0x14 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLInClockRate
-                0x0000229c       0x10 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000020a8       0x10 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_EnablePLL
-                0x000022ac       0x44 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000022ac                Chip_Clock_EnablePLL
+                0x000020b8       0x44 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000020b8                Chip_Clock_EnablePLL
  .text.Chip_Clock_DisablePLL
-                0x000022f0       0x48 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000022f0                Chip_Clock_DisablePLL
+                0x000020fc       0x48 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000020fc                Chip_Clock_DisablePLL
  .text.Chip_Clock_SetupPLL
-                0x00002338       0x5c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00002338                Chip_Clock_SetupPLL
+                0x00002144       0x5c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002144                Chip_Clock_SetupPLL
  .text.Chip_Clock_EnablePeriphClock
-                0x00002394       0x34 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00002394                Chip_Clock_EnablePeriphClock
+                0x000021a0       0x34 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000021a0                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_GetCPUClockSource
-                0x000023c8       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000023c8                Chip_Clock_GetCPUClockSource
+                0x000021d4       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000021d4                Chip_Clock_GetCPUClockSource
  .text.Chip_Clock_SetCPUClockDiv
-                0x000023ec       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000023ec                Chip_Clock_SetCPUClockDiv
+                0x000021f8       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000021f8                Chip_Clock_SetCPUClockDiv
  .text.Chip_Clock_GetCPUClockDiv
-                0x0000240c       0x1c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000240c                Chip_Clock_GetCPUClockDiv
+                0x00002218       0x1c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002218                Chip_Clock_GetCPUClockDiv
  .text.Chip_Clock_GetSYSCLKRate
-                0x00002428       0x34 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00002428                Chip_Clock_GetSYSCLKRate
+                0x00002234       0x34 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002234                Chip_Clock_GetSYSCLKRate
  .text.Chip_Clock_GetMainPLLOutClockRate
-                0x0000245c       0x54 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000245c                Chip_Clock_GetMainPLLOutClockRate
+                0x00002268       0x54 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00002268                Chip_Clock_GetMainPLLOutClockRate
  .text.Chip_Clock_GetMainClockRate
-                0x000024b0       0x28 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000024b0                Chip_Clock_GetMainClockRate
+                0x000022bc       0x28 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000022bc                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x000024d8       0x18 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000024d8                Chip_Clock_GetSystemClockRate
+                0x000022e4       0x18 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000022e4                Chip_Clock_GetSystemClockRate
  .text.Chip_IOCON_PinMux
-                0x000024f0       0x94 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x000024f0                Chip_IOCON_PinMux
+                0x000022fc       0x94 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x000022fc                Chip_IOCON_PinMux
  .text.Chip_Clock_IsMainPLLEnabled
-                0x00002584       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00002390       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLLocked
-                0x000025a8       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x000023b4       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x000025cc       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x000023d8       0x24 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_SetMainPLLSource
-                0x000025f0       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x000023fc       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_SetupIrcClocking
-                0x00002610       0x6c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x00002610                Chip_SetupIrcClocking
+                0x0000241c       0x6c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x0000241c                Chip_SetupIrcClocking
  .text.Chip_SystemInit
-                0x0000267c        0xc C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x0000267c                Chip_SystemInit
- .text.__main   0x00002688       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
-                0x00002688                __CR_SEMIHOST
-                0x00002688                __main
- .text.memcpy   0x0000269c        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
-                0x0000269c                memcpy
- .text.memset   0x000026a0        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
-                0x000026a0                memset
- .text.malloc   0x000026a4       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x000026a4                malloc
- .text.free     0x0000276c       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x0000276c                free
+                0x00002488        0xc C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00002488                Chip_SystemInit
+ .text.__main   0x00002494       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
+                0x00002494                __CR_SEMIHOST
+                0x00002494                __main
+ .text.memcpy   0x000024a8        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memcpy.o)
+                0x000024a8                memcpy
+ .text.memset   0x000024ac        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
+                0x000024ac                memset
+ .text.malloc   0x000024b0       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x000024b0                malloc
+ .text.free     0x00002578       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00002578                free
  .text._Csys_alloc
-                0x0000279c       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x0000279c                _Csys_alloc
- .text._initio  0x000027bc       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
-                0x000027bc                _initio
- .text.setvbuf  0x00002860       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
-                0x00002860                setvbuf
- .text._sbrk    0x000028a0       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
-                0x000028a0                _sbrk
+                0x000025a8       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x000025a8                _Csys_alloc
+ .text._initio  0x000025c8       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x000025c8                _initio
+ .text.setvbuf  0x0000266c       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
+                0x0000266c                setvbuf
+ .text._sbrk    0x000026ac       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
+                0x000026ac                _sbrk
  .text._deferredlazyseek
-                0x000028e0       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x000028e0                _deferredlazyseek
- .text._fdopen  0x00002924       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
-                0x00002924                _fdopen
- .text._fflush  0x0000298e       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
-                0x0000298e                _fflush
- *fill*         0x000029e6        0x2 ff
+                0x000026ec       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
+                0x000026ec                _deferredlazyseek
+ .text._fdopen  0x00002730       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
+                0x00002730                _fdopen
+ .text._fflush  0x0000279a       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
+                0x0000279a                _fflush
+ *fill*         0x000027f2        0x2 ff
  .text._Cwritebuf
-                0x000029e8       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
-                0x000029e8                _Cwritebuf
- .text.fclose   0x00002a50       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
-                0x00002a50                fclose
- .text.fflush   0x00002abc       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
-                0x00002abc                fflush
- .text.fseek    0x00002aec      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
-                0x00002aec                fseek
- .text.ftell    0x00002bfc       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
-                0x00002bfc                ftell
- .text.remove   0x00002c48       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
-                0x00002c48                remove
- .text.strlen   0x00002c5c       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
-                0x00002c5c                strlen
- *fill*         0x00002ca6        0x2 ff
+                0x000027f4       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
+                0x000027f4                _Cwritebuf
+ .text.fclose   0x0000285c       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
+                0x0000285c                fclose
+ .text.fflush   0x000028c8       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
+                0x000028c8                fflush
+ .text.fseek    0x000028f8      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
+                0x000028f8                fseek
+ .text.ftell    0x00002a08       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
+                0x00002a08                ftell
+ .text.remove   0x00002a54       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
+                0x00002a54                remove
+ .text.strlen   0x00002a68       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
+                0x00002a68                strlen
+ *fill*         0x00002ab2        0x2 ff
  .text.__check_heap_overflow
-                0x00002ca8       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
-                0x00002ca8                __check_heap_overflow
+                0x00002ab4       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
+                0x00002ab4                __check_heap_overflow
  .text._do_fflush
-                0x00002cc0       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
-                0x00002cc0                _do_fflush
+                0x00002acc       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
+                0x00002acc                _do_fflush
  .text.__aeabi_memcpy
-                0x00002d04       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x00002d04                __aeabi_memcpy
-                0x00002d0e                __aeabi_memcpy8
-                0x00002d0e                __aeabi_memcpy4
+                0x00002b10       0x34 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00002b10                __aeabi_memcpy
+                0x00002b1a                __aeabi_memcpy8
+                0x00002b1a                __aeabi_memcpy4
  .text.__aeabi_memset_lowlevel
-                0x00002d38       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x00002d38                __aeabi_lowlevel_memset
- *fill*         0x00002d6a        0x2 ff
+                0x00002b44       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
+                0x00002b44                __aeabi_lowlevel_memset
+ *fill*         0x00002b76        0x2 ff
  .text.__sys_appexit
-                0x00002d6c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_appexit.o)
-                0x00002d6c                __sys_appexit
-                0x00002d6c                __exit
+                0x00002b78        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_appexit.o)
+                0x00002b78                __sys_appexit
+                0x00002b78                __exit
  .text.__sys_close
-                0x00002d78        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_close.o)
-                0x00002d78                __sys_close
+                0x00002b84        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_close.o)
+                0x00002b84                __sys_close
  .text.__sys_flen
-                0x00002d84        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_flen.o)
-                0x00002d84                __sys_flen
+                0x00002b90        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_flen.o)
+                0x00002b90                __sys_flen
  .text.__sys_istty
-                0x00002d90        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_istty.o)
-                0x00002d90                __sys_istty
+                0x00002b9c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_istty.o)
+                0x00002b9c                __sys_istty
  .text.__sys_remove
-                0x00002d9c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_remove.o)
-                0x00002d9c                __sys_remove
+                0x00002ba8        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_remove.o)
+                0x00002ba8                __sys_remove
  .text.__sys_seek
-                0x00002da8        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_seek.o)
-                0x00002da8                __sys_seek
+                0x00002bb4        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_seek.o)
+                0x00002bb4                __sys_seek
  .text.__sys_tmpnam
-                0x00002db4        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_tmpnam.o)
-                0x00002db4                __sys_tmpnam
+                0x00002bc0        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_tmpnam.o)
+                0x00002bc0                __sys_tmpnam
  .text.__sys_write
-                0x00002dc0        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
-                0x00002dc0                __sys_write
-                0x00002dc0                __write
+                0x00002bcc        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
+                0x00002bcc                __sys_write
+                0x00002bcc                __write
  *(.rodata .rodata.* .constdata .constdata.*)
- .rodata        0x00002dcc        0x5 ./freeRTOS/src/tasks.o
- *fill*         0x00002dd1        0x3 ff
- .rodata        0x00002dd4       0x2f ./Firmware/src/Main/main.o
- *fill*         0x00002e03        0x1 ff
+ .rodata        0x00002bd8        0x5 ./freeRTOS/src/tasks.o
+ *fill*         0x00002bdd        0x3 ff
+ .rodata        0x00002be0       0x2f ./Firmware/src/Main/main.o
+ *fill*         0x00002c0f        0x1 ff
  .rodata.OscRateIn
-                0x00002e04        0x4 ./Firmware/src/Main/sysinit.o
-                0x00002e04                OscRateIn
+                0x00002c10        0x4 ./Firmware/src/Main/sysinit.o
+                0x00002c10                OscRateIn
  .rodata.RTCOscRateIn
-                0x00002e08        0x4 ./Firmware/src/Main/sysinit.o
-                0x00002e08                RTCOscRateIn
+                0x00002c14        0x4 ./Firmware/src/Main/sysinit.o
+                0x00002c14                RTCOscRateIn
  .rodata.str1.1
-                0x00002e0c       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00002c18       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
  .rodata.str1.1
-                0x00002e24        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
-                0x00002e28                . = ALIGN (0x4)
+                0x00002c30        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x00002c34                . = ALIGN (0x4)
 
-.glue_7         0x00002e28        0x0
- .glue_7        0x00002e28        0x0 linker stubs
+.glue_7         0x00002c34        0x0
+ .glue_7        0x00002c34        0x0 linker stubs
 
-.glue_7t        0x00002e28        0x0
- .glue_7t       0x00002e28        0x0 linker stubs
+.glue_7t        0x00002c34        0x0
+ .glue_7t       0x00002c34        0x0 linker stubs
 
-.vfp11_veneer   0x00002e28        0x0
- .vfp11_veneer  0x00002e28        0x0 linker stubs
+.vfp11_veneer   0x00002c34        0x0
+ .vfp11_veneer  0x00002c34        0x0 linker stubs
 
-.v4_bx          0x00002e28        0x0
- .v4_bx         0x00002e28        0x0 linker stubs
+.v4_bx          0x00002c34        0x0
+ .v4_bx         0x00002c34        0x0 linker stubs
 
-.iplt           0x00002e28        0x0
- .iplt          0x00002e28        0x0 ./freeRTOS/src/FreeRTOSCommonHooks.o
+.iplt           0x00002c34        0x0
+ .iplt          0x00002c34        0x0 ./freeRTOS/src/FreeRTOSCommonHooks.o
 
-.rel.dyn        0x00002e28        0x0
- .rel.iplt      0x00002e28        0x0 ./freeRTOS/src/FreeRTOSCommonHooks.o
+.rel.dyn        0x00002c34        0x0
+ .rel.iplt      0x00002c34        0x0 ./freeRTOS/src/FreeRTOSCommonHooks.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002e28                __exidx_start = .
+                0x00002c34                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00002e28                __exidx_end = .
-                0x00002e28                _etext = .
+                0x00002c34                __exidx_end = .
+                0x00002c34                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x00002e28
+.data_RAM2      0x2007c000        0x0 load address 0x00002c34
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -2510,7 +2504,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000        0x4 load address 0x00002e28
+.data           0x10000000        0x4 load address 0x00002c34
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -2521,7 +2515,7 @@ END GROUP
                 0x10000004                . = ALIGN (0x4)
                 0x10000004                _edata = .
 
-.igot.plt       0x10000004        0x0 load address 0x00002e2c
+.igot.plt       0x10000004        0x0 load address 0x00002c38
  .igot.plt      0x10000004        0x0 ./freeRTOS/src/FreeRTOSCommonHooks.o
 
 .bss_RAM2       0x2007c000        0x0
@@ -2635,7 +2629,7 @@ END GROUP
                 0xefff74b2                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(Cafetera v1.00.axf elf32-littlearm)
 
-.debug_info     0x00000000     0x5b1f
+.debug_info     0x00000000     0x5a02
  .debug_info    0x00000000      0x222 ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_info    0x00000222       0xe7 ./freeRTOS/src/heap_3.o
  .debug_info    0x00000309      0x296 ./freeRTOS/src/list.o
@@ -2643,21 +2637,21 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_info    0x00000955      0xf1c ./freeRTOS/src/queue.o
  .debug_info    0x00001871     0x1972 ./freeRTOS/src/tasks.o
  .debug_info    0x000031e3      0x253 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
- .debug_info    0x00003436      0x555 ./Firmware/src/Main/main.o
- .debug_info    0x0000398b      0x1c1 ./Firmware/src/Main/sysinit.o
- .debug_info    0x00003b4c      0x1a0 ./Firmware/src/Driver/DriverADC.o
- .debug_info    0x00003cec      0x422 ./Firmware/src/Driver/DriverGPIO.o
- .debug_info    0x0000410e       0xdf ./Firmware/src/Driver/DriverIRQ.o
- .debug_info    0x000041ed       0x3b ./Firmware/src/Driver/DriverRTC.o
- .debug_info    0x00004228       0x3b ./Firmware/src/Driver/DriverSerie.o
- .debug_info    0x00004263       0x3b ./Firmware/src/Driver/DriverTFT.o
- .debug_info    0x0000429e       0xdf ./Firmware/src/Driver/Init.o
- .debug_info    0x0000437d      0x51e C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_info    0x0000489b      0xb62 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_info    0x000053fd      0x2e9 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_info    0x000056e6      0x439 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_info    0x00003436      0x438 ./Firmware/src/Main/main.o
+ .debug_info    0x0000386e      0x1c1 ./Firmware/src/Main/sysinit.o
+ .debug_info    0x00003a2f      0x1a0 ./Firmware/src/Driver/DriverADC.o
+ .debug_info    0x00003bcf      0x422 ./Firmware/src/Driver/DriverGPIO.o
+ .debug_info    0x00003ff1       0xdf ./Firmware/src/Driver/DriverIRQ.o
+ .debug_info    0x000040d0       0x3b ./Firmware/src/Driver/DriverRTC.o
+ .debug_info    0x0000410b       0x3b ./Firmware/src/Driver/DriverSerie.o
+ .debug_info    0x00004146       0x3b ./Firmware/src/Driver/DriverTFT.o
+ .debug_info    0x00004181       0xdf ./Firmware/src/Driver/Init.o
+ .debug_info    0x00004260      0x51e C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_info    0x0000477e      0xb62 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_info    0x000052e0      0x2e9 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_info    0x000055c9      0x439 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_abbrev   0x00000000     0x1778
+.debug_abbrev   0x00000000     0x1701
  .debug_abbrev  0x00000000      0x168 ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_abbrev  0x00000168       0xa2 ./freeRTOS/src/heap_3.o
  .debug_abbrev  0x0000020a       0xc1 ./freeRTOS/src/list.o
@@ -2665,21 +2659,21 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_abbrev  0x000004d8      0x216 ./freeRTOS/src/queue.o
  .debug_abbrev  0x000006ee      0x2bd ./freeRTOS/src/tasks.o
  .debug_abbrev  0x000009ab       0xf5 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
- .debug_abbrev  0x00000aa0      0x1dd ./Firmware/src/Main/main.o
- .debug_abbrev  0x00000c7d       0xcc ./Firmware/src/Main/sysinit.o
- .debug_abbrev  0x00000d49       0xab ./Firmware/src/Driver/DriverADC.o
- .debug_abbrev  0x00000df4      0x130 ./Firmware/src/Driver/DriverGPIO.o
- .debug_abbrev  0x00000f24       0x82 ./Firmware/src/Driver/DriverIRQ.o
- .debug_abbrev  0x00000fa6       0x2f ./Firmware/src/Driver/DriverRTC.o
- .debug_abbrev  0x00000fd5       0x2f ./Firmware/src/Driver/DriverSerie.o
- .debug_abbrev  0x00001004       0x2f ./Firmware/src/Driver/DriverTFT.o
- .debug_abbrev  0x00001033       0x82 ./Firmware/src/Driver/Init.o
- .debug_abbrev  0x000010b5      0x13c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_abbrev  0x000011f1      0x2ec C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_abbrev  0x000014dd      0x126 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_abbrev  0x00001603      0x175 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_abbrev  0x00000aa0      0x166 ./Firmware/src/Main/main.o
+ .debug_abbrev  0x00000c06       0xcc ./Firmware/src/Main/sysinit.o
+ .debug_abbrev  0x00000cd2       0xab ./Firmware/src/Driver/DriverADC.o
+ .debug_abbrev  0x00000d7d      0x130 ./Firmware/src/Driver/DriverGPIO.o
+ .debug_abbrev  0x00000ead       0x82 ./Firmware/src/Driver/DriverIRQ.o
+ .debug_abbrev  0x00000f2f       0x2f ./Firmware/src/Driver/DriverRTC.o
+ .debug_abbrev  0x00000f5e       0x2f ./Firmware/src/Driver/DriverSerie.o
+ .debug_abbrev  0x00000f8d       0x2f ./Firmware/src/Driver/DriverTFT.o
+ .debug_abbrev  0x00000fbc       0x82 ./Firmware/src/Driver/Init.o
+ .debug_abbrev  0x0000103e      0x13c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_abbrev  0x0000117a      0x2ec C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_abbrev  0x00001466      0x126 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_abbrev  0x0000158c      0x175 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_aranges  0x00000000      0x810
+.debug_aranges  0x00000000      0x7f8
  .debug_aranges
                 0x00000000       0x40 ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_aranges
@@ -2695,33 +2689,33 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_aranges
                 0x00000418       0x80 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
  .debug_aranges
-                0x00000498       0x68 ./Firmware/src/Main/main.o
+                0x00000498       0x50 ./Firmware/src/Main/main.o
  .debug_aranges
-                0x00000500       0x20 ./Firmware/src/Main/sysinit.o
+                0x000004e8       0x20 ./Firmware/src/Main/sysinit.o
  .debug_aranges
-                0x00000520       0x20 ./Firmware/src/Driver/DriverADC.o
+                0x00000508       0x20 ./Firmware/src/Driver/DriverADC.o
  .debug_aranges
-                0x00000540       0x48 ./Firmware/src/Driver/DriverGPIO.o
+                0x00000528       0x48 ./Firmware/src/Driver/DriverGPIO.o
  .debug_aranges
-                0x00000588       0x20 ./Firmware/src/Driver/DriverIRQ.o
+                0x00000570       0x20 ./Firmware/src/Driver/DriverIRQ.o
  .debug_aranges
-                0x000005a8       0x20 ./Firmware/src/Driver/DriverRTC.o
+                0x00000590       0x20 ./Firmware/src/Driver/DriverRTC.o
  .debug_aranges
-                0x000005c8       0x20 ./Firmware/src/Driver/DriverSerie.o
+                0x000005b0       0x20 ./Firmware/src/Driver/DriverSerie.o
  .debug_aranges
-                0x000005e8       0x20 ./Firmware/src/Driver/DriverTFT.o
+                0x000005d0       0x20 ./Firmware/src/Driver/DriverTFT.o
  .debug_aranges
-                0x00000608       0x20 ./Firmware/src/Driver/Init.o
+                0x000005f0       0x20 ./Firmware/src/Driver/Init.o
  .debug_aranges
-                0x00000628       0x38 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x00000610       0x38 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
  .debug_aranges
-                0x00000660      0x120 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000648      0x120 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .debug_aranges
-                0x00000780       0x30 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000768       0x30 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
  .debug_aranges
-                0x000007b0       0x60 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000798       0x60 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_ranges   0x00000000      0x6d0
+.debug_ranges   0x00000000      0x6b8
  .debug_ranges  0x00000000       0x30 ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_ranges  0x00000030       0x18 ./freeRTOS/src/heap_3.o
  .debug_ranges  0x00000048       0x30 ./freeRTOS/src/list.o
@@ -2729,21 +2723,21 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_ranges  0x000000e0      0x100 ./freeRTOS/src/queue.o
  .debug_ranges  0x000001e0      0x1d8 ./freeRTOS/src/tasks.o
  .debug_ranges  0x000003b8       0x70 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
- .debug_ranges  0x00000428       0x58 ./Firmware/src/Main/main.o
- .debug_ranges  0x00000480       0x10 ./Firmware/src/Main/sysinit.o
- .debug_ranges  0x00000490       0x10 ./Firmware/src/Driver/DriverADC.o
- .debug_ranges  0x000004a0       0x38 ./Firmware/src/Driver/DriverGPIO.o
- .debug_ranges  0x000004d8       0x10 ./Firmware/src/Driver/DriverIRQ.o
- .debug_ranges  0x000004e8       0x10 ./Firmware/src/Driver/DriverRTC.o
- .debug_ranges  0x000004f8       0x10 ./Firmware/src/Driver/DriverSerie.o
- .debug_ranges  0x00000508       0x10 ./Firmware/src/Driver/DriverTFT.o
- .debug_ranges  0x00000518       0x10 ./Firmware/src/Driver/Init.o
- .debug_ranges  0x00000528       0x28 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_ranges  0x00000550      0x110 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_ranges  0x00000660       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_ranges  0x00000680       0x50 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_ranges  0x00000428       0x40 ./Firmware/src/Main/main.o
+ .debug_ranges  0x00000468       0x10 ./Firmware/src/Main/sysinit.o
+ .debug_ranges  0x00000478       0x10 ./Firmware/src/Driver/DriverADC.o
+ .debug_ranges  0x00000488       0x38 ./Firmware/src/Driver/DriverGPIO.o
+ .debug_ranges  0x000004c0       0x10 ./Firmware/src/Driver/DriverIRQ.o
+ .debug_ranges  0x000004d0       0x10 ./Firmware/src/Driver/DriverRTC.o
+ .debug_ranges  0x000004e0       0x10 ./Firmware/src/Driver/DriverSerie.o
+ .debug_ranges  0x000004f0       0x10 ./Firmware/src/Driver/DriverTFT.o
+ .debug_ranges  0x00000500       0x10 ./Firmware/src/Driver/Init.o
+ .debug_ranges  0x00000510       0x28 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_ranges  0x00000538      0x110 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_ranges  0x00000648       0x20 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_ranges  0x00000668       0x50 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_macro    0x00000000     0x69b0
+.debug_macro    0x00000000     0x6d66
  .debug_macro   0x00000000      0x24f ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_macro   0x0000024f      0x898 ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_macro   0x00000ae7       0x10 ./freeRTOS/src/FreeRTOSCommonHooks.o
@@ -2802,24 +2796,24 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_macro   0x00004bae       0xe8 ./Firmware/src/Main/main.o
  .debug_macro   0x00004c96       0x78 ./Firmware/src/Main/main.o
  .debug_macro   0x00004d0e       0x82 ./Firmware/src/Main/main.o
- .debug_macro   0x00004d90       0xa0 ./Firmware/src/Main/main.o
- .debug_macro   0x00004e30       0x64 ./Firmware/src/Main/main.o
- .debug_macro   0x00004e94      0x1cd ./Firmware/src/Main/sysinit.o
- .debug_macro   0x00005061      0x1d7 ./Firmware/src/Driver/DriverADC.o
- .debug_macro   0x00005238      0x1dc ./Firmware/src/Driver/DriverGPIO.o
- .debug_macro   0x00005414       0x9a ./Firmware/src/Driver/DriverGPIO.o
- .debug_macro   0x000054ae      0x24f ./Firmware/src/Driver/DriverIRQ.o
- .debug_macro   0x000056fd       0x1b ./Firmware/src/Driver/DriverRTC.o
- .debug_macro   0x00005718       0x1b ./Firmware/src/Driver/DriverSerie.o
- .debug_macro   0x00005733       0x1b ./Firmware/src/Driver/DriverTFT.o
- .debug_macro   0x0000574e      0x2a8 ./Firmware/src/Driver/Init.o
- .debug_macro   0x000059f6      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_macro   0x00005bc3      0x886 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_macro   0x00006449      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_macro   0x00006616      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_macro   0x000067e3      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_macro   0x00004d90      0x27b ./Firmware/src/Main/main.o
+ .debug_macro   0x0000500b       0x64 ./Firmware/src/Main/main.o
+ .debug_macro   0x0000506f      0x1cd ./Firmware/src/Main/sysinit.o
+ .debug_macro   0x0000523c      0x1d7 ./Firmware/src/Driver/DriverADC.o
+ .debug_macro   0x00005413      0x1dc ./Firmware/src/Driver/DriverGPIO.o
+ .debug_macro   0x000055ef      0x275 ./Firmware/src/Driver/DriverGPIO.o
+ .debug_macro   0x00005864      0x24f ./Firmware/src/Driver/DriverIRQ.o
+ .debug_macro   0x00005ab3       0x1b ./Firmware/src/Driver/DriverRTC.o
+ .debug_macro   0x00005ace       0x1b ./Firmware/src/Driver/DriverSerie.o
+ .debug_macro   0x00005ae9       0x1b ./Firmware/src/Driver/DriverTFT.o
+ .debug_macro   0x00005b04      0x2a8 ./Firmware/src/Driver/Init.o
+ .debug_macro   0x00005dac      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x00005f79      0x886 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_macro   0x000067ff      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_macro   0x000069cc      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_macro   0x00006b99      0x1cd C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_line     0x00000000     0x587a
+.debug_line     0x00000000     0x580f
  .debug_line    0x00000000      0x5aa ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_line    0x000005aa      0x248 ./freeRTOS/src/heap_3.o
  .debug_line    0x000007f2      0x296 ./freeRTOS/src/list.o
@@ -2827,21 +2821,21 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_line    0x00000df7      0x68e ./freeRTOS/src/queue.o
  .debug_line    0x00001485      0xbd4 ./freeRTOS/src/tasks.o
  .debug_line    0x00002059       0xe3 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
- .debug_line    0x0000213c      0x88f ./Firmware/src/Main/main.o
- .debug_line    0x000029cb      0x407 ./Firmware/src/Main/sysinit.o
- .debug_line    0x00002dd2      0x45e ./Firmware/src/Driver/DriverADC.o
- .debug_line    0x00003230      0x4c2 ./Firmware/src/Driver/DriverGPIO.o
- .debug_line    0x000036f2      0x57a ./Firmware/src/Driver/DriverIRQ.o
- .debug_line    0x00003c6c       0xad ./Firmware/src/Driver/DriverRTC.o
- .debug_line    0x00003d19       0xb1 ./Firmware/src/Driver/DriverSerie.o
- .debug_line    0x00003dca       0xad ./Firmware/src/Driver/DriverTFT.o
- .debug_line    0x00003e77      0x601 ./Firmware/src/Driver/Init.o
- .debug_line    0x00004478      0x449 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x000048c1      0x6c5 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x00004f86      0x435 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x000053bb      0x4bf C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x0000213c      0x824 ./Firmware/src/Main/main.o
+ .debug_line    0x00002960      0x407 ./Firmware/src/Main/sysinit.o
+ .debug_line    0x00002d67      0x45e ./Firmware/src/Driver/DriverADC.o
+ .debug_line    0x000031c5      0x4c2 ./Firmware/src/Driver/DriverGPIO.o
+ .debug_line    0x00003687      0x57a ./Firmware/src/Driver/DriverIRQ.o
+ .debug_line    0x00003c01       0xad ./Firmware/src/Driver/DriverRTC.o
+ .debug_line    0x00003cae       0xb1 ./Firmware/src/Driver/DriverSerie.o
+ .debug_line    0x00003d5f       0xad ./Firmware/src/Driver/DriverTFT.o
+ .debug_line    0x00003e0c      0x601 ./Firmware/src/Driver/Init.o
+ .debug_line    0x0000440d      0x449 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x00004856      0x6c5 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x00004f1b      0x435 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x00005350      0x4bf C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
 
-.debug_str      0x00000000    0x19565
+.debug_str      0x00000000    0x19cef
  .debug_str     0x00000000    0x13a57 ./freeRTOS/src/FreeRTOSCommonHooks.o
                               0x13b56 (size before relaxing)
  .debug_str     0x00013a57      0x103 ./freeRTOS/src/heap_3.o
@@ -2856,31 +2850,31 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
                                0x903a (size before relaxing)
  .debug_str     0x00016ec3      0x1a5 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
                                0x26c2 (size before relaxing)
- .debug_str     0x00017068     0x13fd ./Firmware/src/Main/main.o
-                              0x15686 (size before relaxing)
- .debug_str     0x00018465       0x29 ./Firmware/src/Main/sysinit.o
+ .debug_str     0x00017068     0x1b87 ./Firmware/src/Main/main.o
+                              0x15e10 (size before relaxing)
+ .debug_str     0x00018bef       0x29 ./Firmware/src/Main/sysinit.o
                               0x1074c (size before relaxing)
- .debug_str     0x0001848e       0x3b ./Firmware/src/Driver/DriverADC.o
+ .debug_str     0x00018c18       0x3b ./Firmware/src/Driver/DriverADC.o
                               0x10771 (size before relaxing)
- .debug_str     0x000184c9      0x38e ./Firmware/src/Driver/DriverGPIO.o
-                              0x10b73 (size before relaxing)
- .debug_str     0x00018857       0x35 ./Firmware/src/Driver/DriverIRQ.o
+ .debug_str     0x00018c53      0x38e ./Firmware/src/Driver/DriverGPIO.o
+                              0x1135c (size before relaxing)
+ .debug_str     0x00018fe1       0x35 ./Firmware/src/Driver/DriverIRQ.o
                               0x13c71 (size before relaxing)
- .debug_str     0x0001888c       0x2b ./Firmware/src/Driver/DriverRTC.o
+ .debug_str     0x00019016       0x2b ./Firmware/src/Driver/DriverRTC.o
                                0x2523 (size before relaxing)
- .debug_str     0x000188b7       0x2f ./Firmware/src/Driver/DriverSerie.o
+ .debug_str     0x00019041       0x2f ./Firmware/src/Driver/DriverSerie.o
                                0x2529 (size before relaxing)
- .debug_str     0x000188e6       0x2b ./Firmware/src/Driver/DriverTFT.o
+ .debug_str     0x00019070       0x2b ./Firmware/src/Driver/DriverTFT.o
                                0x2523 (size before relaxing)
- .debug_str     0x00018911       0x2a ./Firmware/src/Driver/Init.o
-                              0x13fc3 (size before relaxing)
- .debug_str     0x0001893b      0x26b C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_str     0x0001909b       0x2a ./Firmware/src/Driver/Init.o
+                              0x147ac (size before relaxing)
+ .debug_str     0x000190c5      0x26b C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
                               0x10b4a (size before relaxing)
- .debug_str     0x00018ba6      0x857 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_str     0x00019330      0x857 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
                               0x111b8 (size before relaxing)
- .debug_str     0x000193fd       0xa4 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_str     0x00019b87       0xa4 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
                               0x10635 (size before relaxing)
- .debug_str     0x000194a1       0xc4 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_str     0x00019c2b       0xc4 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
                               0x1081d (size before relaxing)
 
 .comment        0x00000000       0xdc
@@ -3034,7 +3028,7 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .ARM.attributes
                 0x00000966       0x21 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
 
-.debug_frame    0x00000000     0x1c44
+.debug_frame    0x00000000     0x1bd0
  .debug_frame   0x00000000       0xb4 ./freeRTOS/src/FreeRTOSCommonHooks.o
  .debug_frame   0x000000b4       0x58 ./freeRTOS/src/heap_3.o
  .debug_frame   0x0000010c       0xd8 ./freeRTOS/src/list.o
@@ -3042,16 +3036,16 @@ OUTPUT(Cafetera v1.00.axf elf32-littlearm)
  .debug_frame   0x0000035c      0x498 ./freeRTOS/src/queue.o
  .debug_frame   0x000007f4      0x864 ./freeRTOS/src/tasks.o
  .debug_frame   0x00001058      0x170 ./Firmware/src/Main/cr_startup_lpc175x_6x.o
- .debug_frame   0x000011c8      0x178 ./Firmware/src/Main/main.o
- .debug_frame   0x00001340       0x34 ./Firmware/src/Main/sysinit.o
- .debug_frame   0x00001374       0x30 ./Firmware/src/Driver/DriverADC.o
- .debug_frame   0x000013a4       0xf0 ./Firmware/src/Driver/DriverGPIO.o
- .debug_frame   0x00001494       0x30 ./Firmware/src/Driver/DriverIRQ.o
- .debug_frame   0x000014c4       0x30 ./Firmware/src/Driver/DriverRTC.o
- .debug_frame   0x000014f4       0x30 ./Firmware/src/Driver/DriverSerie.o
- .debug_frame   0x00001524       0x30 ./Firmware/src/Driver/DriverTFT.o
- .debug_frame   0x00001554       0x2c ./Firmware/src/Driver/Init.o
- .debug_frame   0x00001580       0x88 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_frame   0x00001608      0x490 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_frame   0x00001a98       0x80 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_frame   0x00001b18      0x12c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_frame   0x000011c8      0x104 ./Firmware/src/Main/main.o
+ .debug_frame   0x000012cc       0x34 ./Firmware/src/Main/sysinit.o
+ .debug_frame   0x00001300       0x30 ./Firmware/src/Driver/DriverADC.o
+ .debug_frame   0x00001330       0xf0 ./Firmware/src/Driver/DriverGPIO.o
+ .debug_frame   0x00001420       0x30 ./Firmware/src/Driver/DriverIRQ.o
+ .debug_frame   0x00001450       0x30 ./Firmware/src/Driver/DriverRTC.o
+ .debug_frame   0x00001480       0x30 ./Firmware/src/Driver/DriverSerie.o
+ .debug_frame   0x000014b0       0x30 ./Firmware/src/Driver/DriverTFT.o
+ .debug_frame   0x000014e0       0x2c ./Firmware/src/Driver/Init.o
+ .debug_frame   0x0000150c       0x88 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_frame   0x00001594      0x490 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_frame   0x00001a24       0x80 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_frame   0x00001aa4      0x12c C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)

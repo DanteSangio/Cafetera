@@ -25,6 +25,7 @@
 #include "PrimitivaUSB.h"
 
 #include "DriverADC.h"
+#include "DriverDMA.h"
 #include "DriverGPIO.h"
 #include "DriverIR.h"
 #include "DriverIRQ.h"
@@ -42,6 +43,8 @@
 #define DISABLE			3		//para desactivar el modo debug
 
 #define MODO_DEBUG	DISABLE
+
+#define ALL_LEDs	5000
 
 #define NUMERO_TELEFONO	"5491131673996"	//	Dante = 1563560077
 

@@ -14,6 +14,7 @@ void Inicializar (void)
 	InitTFT();
 	InitRTC();
 	InitADC();
+	InitUSB();
 
 	SystemCoreClockUpdate();
 }

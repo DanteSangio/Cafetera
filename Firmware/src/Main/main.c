@@ -71,49 +71,40 @@ static void vTaskLectura(void *pvParameters)
 	while (1)
 	{
 		Buffer.tiempo = 0;
-/*
-		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(UP_KEY_PORT) , PIN(UP_KEY_PIN)) == (bool)PRESSED )
+
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_1_PORT) , PIN(IR_1_PIN)) == (bool)PRESSED )
 		{
-			Buffer.puerto = PORT(RED_PORT);
-			Buffer.pin = 	PIN(RED_PIN);
+			Buffer.puerto = PORT(RGB_RED_PORT);
+			Buffer.pin = 	PIN(RGB_RED_PIN);
 			Buffer.tiempo = 1000;
 		}
 
-		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(DOWN_KEY_PORT) , PIN(DOWN_KEY_PIN)) == (bool)PRESSED )
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_2_PORT) , PIN(IR_2_PIN)) == (bool)PRESSED )
 		{
-			Buffer.puerto = PORT(BLUE_PORT);
-			Buffer.pin = 	PIN(BLUE_PIN);
+			Buffer.puerto = PORT(RGB_BLUE_PORT);
+			Buffer.pin = 	PIN(RGB_BLUE_PIN);
 			Buffer.tiempo = 2000;
 		}
 
-		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(LEFT_KEY_PORT) , PIN(LEFT_KEY_PIN)) == (bool)PRESSED )
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_3_PORT) , PIN(IR_3_PIN)) == (bool)PRESSED )
 		{
-			Buffer.puerto = PORT(GREEN_PORT);
-			Buffer.pin = 	PIN(GREEN_PIN);
+			Buffer.puerto = PORT(RGB_GREEN_PORT);
+			Buffer.pin = 	PIN(RGB_GREEN_PIN);
 			Buffer.tiempo = 2000;
 		}
 
-		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(RIGHT_KEY_PORT) , PIN(RIGHT_KEY_PIN)) == (bool)PRESSED )
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_4_PORT) , PIN(IR_4_PIN)) == (bool)PRESSED )
 		{
-			Buffer.puerto = PORT(RED_PORT);
-			Buffer.pin = 	PIN(RED_PIN);
+			Buffer.puerto = PORT(RGB_RED_PORT);
+			Buffer.pin = 	PIN(RGB_RED_PIN);
 			Buffer.tiempo = ALL_LEDs;
 		}
-*/
+
 		if( Buffer.tiempo != 0 )
 		{
 			xQueueSendToBack( Cola_1 , &Buffer , portMAX_DELAY );
 		}
 
-		/*
-		xSemaphoreTake(Semaforo_2 , portMAX_DELAY );
-
-		Chip_GPIO_SetPinOutHigh (LPC_GPIO , PORT(0) , PIN(22));
-
-		vTaskDelay( 500 / portTICK_PERIOD_MS );
-
-		xSemaphoreGive(Semaforo_1 );
-		*/
 	}
 }
 
@@ -121,16 +112,16 @@ static void vTaskLectura(void *pvParameters)
 static void xTaskEscritura(void *pvParameters)
 {
 	LED_GPIO LED_RGB;
-/*
+
 	uint8_t 	Puerto;
 	uint8_t 	Pin;
 	uint32_t 	Tiempo;
 	uint32_t 	Veces;
-*/
+
 	while (1)
 	{
 		xQueueReceive( Cola_2 , &LED_RGB , portMAX_DELAY );
-/*
+
 		if ( LED_RGB.tiempo != ALL_LEDs )
 		{
 			Puerto = 	LED_RGB.puerto;
@@ -147,23 +138,14 @@ static void xTaskEscritura(void *pvParameters)
 		{
 			for( Veces = 6 ; Veces ; Veces-- )
 			{
-				Chip_GPIO_SetPinToggle( LPC_GPIO , PORT(RED_PORT) ,   PIN(RED_PIN) );
-				Chip_GPIO_SetPinToggle( LPC_GPIO , PORT(BLUE_PORT) ,  PIN(BLUE_PIN) );
-				Chip_GPIO_SetPinToggle( LPC_GPIO , PORT(GREEN_PORT) , PIN(GREEN_PIN) );
+				Chip_GPIO_SetPinToggle( LPC_GPIO , PORT(RGB_RED_PORT) ,   PIN(RGB_RED_PIN) );
+				Chip_GPIO_SetPinToggle( LPC_GPIO , PORT(RGB_BLUE_PORT) ,  PIN(RGB_BLUE_PIN) );
+				Chip_GPIO_SetPinToggle( LPC_GPIO , PORT(RGB_GREEN_PORT) , PIN(RGB_GREEN_PIN) );
 
 				vTaskDelay( 500 / portTICK_PERIOD_MS );
 			}
 		}
-*/
-		/*
-		xSemaphoreTake(Semaforo_1 , portMAX_DELAY );
 
-		Chip_GPIO_SetPinOutLow (LPC_GPIO , PORT(0) , PIN(22));
-
-		vTaskDelay( 500 / portTICK_PERIOD_MS );
-
-		xSemaphoreGive(Semaforo_2 );
-		*/
 	}
 }
 
@@ -173,6 +155,11 @@ int main(void)
 
 	/*Configuración inicial del microcontrolador*/
 	Inicializar ();
+
+	/*Inicializacion de GPIO*/
+	LED_Struct.pin = PORT(RGB_RED_PORT);
+	LED_Struct.puerto = PIN(RGB_RED_PIN);
+	LED_Struct.tiempo = 500;
 
 	/*Creación de los Semaforos del Sistema Operativo*/
 	vSemaphoreCreateBinary(Semaforo_1);

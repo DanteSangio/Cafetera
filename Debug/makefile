@@ -27,25 +27,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: Cafetera\ v1.00.axf
+all: Cafetera.axf
 
 # Tool invocations
-Cafetera\ v1.00.axf: $(OBJS) $(USER_OBJS)
+Cafetera.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -L"C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug" -Xlinker -Map="Cafetera v1.00.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "FRTOS_Debug.ld" -o "Cafetera v1.00.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -Map="Cafetera.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "FRTOS_Debug.ld" -o "Cafetera.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) "Cafetera v1.00.axf"
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) Cafetera.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "Cafetera v1.00.axf"; # arm-none-eabi-objcopy -v -O binary "Cafetera v1.00.axf" "Cafetera v1.00.bin" ; # checksum -p LPC1769 -d "Cafetera v1.00.bin";
+	-arm-none-eabi-size "Cafetera.axf"; # arm-none-eabi-objcopy -v -O binary "Cafetera.axf" "Cafetera.bin" ; # checksum -p LPC1769 -d "Cafetera.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents

@@ -6,9 +6,9 @@
 *	\date 03-11-2017 00:02:05
 */
 
+#include "Reposo.h"
 
-
-#include "funciones.h" 
+//#include "funciones.h"
 
 //Implementacion Switch-Case
 

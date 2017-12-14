@@ -6,8 +6,10 @@
 *	\date 03-11-2017 15:07:58
 */
 
+#include "General.h"
+
 int EN_RFID = 0 ;int EN_Touch = 0 ;int EN_USB = 0 ;int ID_RFID = 0 ;int USB_state = 0 ;int Accion = 0 ;int RFID = 0 ;int Tiempo = 0 ;int VASO = 0 ;int PANTALLA = 0 ;
-#include "funciones.h" 
+//#include "funciones.h"
 
 //Implementacion Switch-Case
 

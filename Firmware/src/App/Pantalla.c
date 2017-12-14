@@ -6,13 +6,10 @@
 *	\date 03-11-2017 16:19:50
 */
 
-
-
-
-
+#include "Pantalla.h"
 
 int PANTALLA = 0 ;int Accion = 0 ;int T_Teclado_1 = 0 ;int T_Teclado_2 = 0 ;
-#include "funciones.h" 
+//#include "funciones.h"
 
 //Implementacion Switch-Case
 

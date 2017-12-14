@@ -6,6 +6,9 @@
 *	\date 03-11-2017 00:02:05
 */
 
+#ifndef FIRMWARE_INC_APP_REPOSO_H_
+#define FIRMWARE_INC_APP_REPOSO_H_
+
 //Declaracion de constantes
 #define TRUE  1
 #define FALSE  0
@@ -37,3 +40,5 @@ void CargarAgua(void);
 void BOMBA = OFF(void);
 void EnviarMsj(void);
 void BajoConsumo(void);
+
+#endif /*FIRMWARE_INC_APP_REPOSO_H_*/

@@ -18,6 +18,5 @@ Firmware/src/App \
 Firmware/src/Driver \
 Firmware/src/Main \
 Firmware/src/Primitive \
-MDE_Prueba-master/Máquinas \
 freeRTOS/src \
 

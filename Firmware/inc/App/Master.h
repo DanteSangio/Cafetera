@@ -6,6 +6,9 @@
 *	\date 03-11-2017 14:55:47
 */
 
+#ifndef FIRMWARE_INC_APP_MASTER_H_
+#define FIRMWARE_INC_APP_MASTER_H_
+
 //Declaracion de constantes
 #define TRUE  1
 #define FALSE  0
@@ -35,3 +38,5 @@ void MsjPantalla(void);
 void PrenderPantalla(void);
 void PANTALLA = ON(void);
 void MsjPantalla = "Bienvenido"(void);
+
+#endif /*FIRMWARE_INC_APP_MASTER_H_*/

@@ -6,9 +6,9 @@
 *	\date 03-11-2017 14:55:47
 */
 
+#include "Master.h"
 
-
-#include "funciones.h" 
+//#include "funciones.h"
 
 //Implementacion Switch-Case
 

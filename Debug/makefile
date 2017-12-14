@@ -9,7 +9,6 @@ RM := rm -rf
 # All of the sources participating in the build are defined here
 -include sources.mk
 -include freeRTOS/src/subdir.mk
--include MDE_Prueba-master/Máquinas/subdir.mk
 -include Firmware/src/Primitive/subdir.mk
 -include Firmware/src/Main/subdir.mk
 -include Firmware/src/Driver/subdir.mk

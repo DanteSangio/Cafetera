@@ -11,6 +11,12 @@
 #include "chip.h"
 #include "DriverGPIO.h"
 
+/****************************************DEFINICIONES PARA TIMERS************************************************/
+#define MATCH0		0
+#define MATCH1		1
+#define MATCH2		2
+#define MATCH3		3
+
 void InitTimer0 ( void );
 
 void Configuracion_Timer ( void );

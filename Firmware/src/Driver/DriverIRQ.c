@@ -7,12 +7,34 @@
 
 #include "DriverIRQ.h"
 
-void TIMER0_IRQHandler ( void )
+void TIMER0_IRQHandler(void)
 {
+	BaseType_t FuerzaCC = pdFALSE;
 
+	if (Chip_TIMER_MatchPending(LPC_TIMER0, MATCH0))
+	{
+		Chip_TIMER_ClearMatch(LPC_TIMER0, MATCH0);
+
+		//xSemaphoreGiveFromISR( Semaphore_MUESTRA, &FuerzaCC);
+
+		portYIELD_FROM_ISR( FuerzaCC );
+	}
 }
 
-void ADC_IRQHandler(void) //static
+void ADC_IRQHandler(void) // 	USAR TODO FROM_ISR
+{
+	BaseType_t FuerzaCC = pdFALSE;
+
+	NVIC_DisableIRQ(ADC_IRQn);
+
+	//xSemaphoreGiveFromISR( Semaphore_ADC, &FuerzaCC ); 	// ANALIZA SI HAY UNA TAREA DE MAYOR PRIORIDAD A LA QUE SE ESTABA EJECUTANDO
+														// BLOQUEADA POR ÉSTE SEMAFORO Y EN EL CASO DE QUE SI, FUERZA EL CAMBIO
+														// DE CONTEXTO
+
+	portYIELD_FROM_ISR( FuerzaCC );
+}
+
+void ADC_IRQHandlerrrr(void) //static
 {
 	uint16_t dataADC;
 	/* Interrupt mode: Call the stream interrupt handler */

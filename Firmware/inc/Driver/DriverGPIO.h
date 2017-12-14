@@ -12,6 +12,8 @@
 
 /*Definiciones de las macros*/
 
+/****************************************DEFINICIONES PARA GPIO************************************************/
+
 #define PORT(x) 	((uint8_t) x)
 #define PIN(x)		((uint8_t) x)
 
@@ -23,6 +25,13 @@
 
 #define PRESSED		((uint8_t) 0)
 #define NOT_PRESSED	((uint8_t) 1)
+
+#define DESACTIVADO				0
+#define ACTIVADO				1
+#define NO_PULSADO				0
+#define PULSADO					1
+#define CERRADA					0
+#define ABIERTA					1
 
 /*	Definiciones modulo RFID	*/
 #define RFID_MOSI_PORT	((uint8_t) 0)

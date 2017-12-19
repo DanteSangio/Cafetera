@@ -9,22 +9,25 @@
 #ifndef FIRMWARE_INC_APP_PANTALLA_H_
 #define FIRMWARE_INC_APP_PANTALLA_H_
 
+#include "chip.h"
+
 //Declaracion de constantes
 #define OFF			0
 #define ON			1
 #define Cancelar	2
 #define Aceptar		3
 
+#define TimeOut		5
 
 //declaracion de la maquina
-void maquina_estado(void);
-
+void maquinaPantalla(void);
 
 //Declaracion de estados
-#define 	APAGADO	0
-#define 	MENSAJE	1
+#define 	APAGADO		0
+#define 	MENSAJE		1
 #define 	TECLADO_1	2
 #define 	TECLADO_2	3
+
 
 //Prototipos de los eventos
 

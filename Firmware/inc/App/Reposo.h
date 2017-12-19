@@ -9,6 +9,8 @@
 #ifndef FIRMWARE_INC_APP_REPOSO_H_
 #define FIRMWARE_INC_APP_REPOSO_H_
 
+#include "chip.h"
+
 //Declaracion de constantes
 #define NivelMax 99
 #define NivelMinimo 10
@@ -19,7 +21,7 @@
 #define ON 1
 
 //declaracion de la maquina
-void maquina_estado(void);
+void maquinaReposo(void);
 
 
 //Declaracion de estados

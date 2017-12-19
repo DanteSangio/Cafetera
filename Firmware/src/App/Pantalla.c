@@ -5,18 +5,23 @@
 *	\author JuanManuelGonzalezGonzalez
 *	\date 03-11-2017 16:19:50
 */
-int PANTALLA;
-int Accion;
-int T_Teclado_1;
-int T_Teclado_2;
 
+//int PANTALLA;
+//int Accion;
+//int T_Teclado_1;
+//int T_Teclado_2;
 
 #include "Pantalla.h"
 
-int PANTALLA = 0 ;int Accion = 0 ;int T_Teclado_1 = 0 ;int T_Teclado_2 = 0 ;
+uint32_t T_Teclado_1 = 0 ;
+uint32_t T_Teclado_2 = 0 ;
+
+extern uint32_t Accion;
+extern uint32_t PANTALLA;
+
 //#include "funciones.h"
 
-void maquina_estado()
+void maquinaPantalla()
 {
 		static int estado = APAGADO;
 
@@ -36,20 +41,21 @@ void maquina_estado()
 					estado = MENSAJE;
 		
 				}
+				/*
 				if(EN_Touch == ON)
 				{
 					
 					estado = TECLADO_1;
 		
 				}
-
+				*/
 				break;
 			
 			case MENSAJE:
 			
 				if(PANTALLA == ON)
 				{
-					MsjPantalla();
+					//MsjPantalla();
 					estado = MENSAJE;
 		
 				}

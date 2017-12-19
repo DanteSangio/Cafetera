@@ -5,14 +5,15 @@
 *	\author JuanManuelGonzalezGonzalez
 *	\date 03-11-2017 14:55:47
 */
-int accion;
-int MsjPantalla;
-int Recepcion;
-
-
 #include "Master.h"
 
-void maquina_estado()
+uint32_t Accion;
+uint32_t Recepcion;
+uint32_t Transmision;
+
+//int MsjPantalla;
+
+void maquinaMaestro(void)
 {
 		static int estado = CONECTADO;
 
@@ -32,9 +33,9 @@ void maquina_estado()
 					estado = ENVIANDO;
 		
 				}
-				if(Accion == NULL)
+				if(Accion == 0) // NULL
 				{
-					MsjPantalla = "Bienvenido";
+					//MsjPantalla = "Bienvenido";
 					estado = CONECTADO;
 		
 				}
@@ -45,7 +46,7 @@ void maquina_estado()
 			
 				if(Recepcion != OK)
 				{
-					Rx_USB();
+					//Rx_USB();
 					estado = RECIBIENDO;
 		
 				}
@@ -60,9 +61,9 @@ void maquina_estado()
 			
 			case ENVIANDO:
 			
-				if(Transmision!=OK)
+				if( Transmision != OK)
 				{
-					Tx_USB();
+					//Tx_USB();
 					estado = ENVIANDO;
 		
 				}
@@ -103,6 +104,7 @@ void Tx_USB(void)
 	
 
 }
+/*
 void MsjPantalla(void)
 {
 	
@@ -114,7 +116,7 @@ void MsjPantalla(void)
 	
 
 }
-
+*/
 void PrenderPantalla(void)
 {
 	

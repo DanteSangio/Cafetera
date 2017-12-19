@@ -1955,6 +1955,420 @@ Discarded input sections
  .debug_frame   0x00000000      0x100 ./Firmware/src/App/Aplicacion.o
  .ARM.attributes
                 0x00000000       0x33 ./Firmware/src/App/Aplicacion.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/General.o
+ .text          0x00000000        0x0 ./Firmware/src/App/General.o
+ .data          0x00000000        0x0 ./Firmware/src/App/General.o
+ .bss           0x00000000        0x0 ./Firmware/src/App/General.o
+ .bss.EN_RFID   0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.EN_Touch  0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.EN_USB    0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.ID_RFID   0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.USB_state
+                0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.RFID      0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.Tiempo    0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.VASO      0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.TimeOut   0x00000000        0x4 ./Firmware/src/App/General.o
+ .bss.Master_ID
+                0x00000000        0x4 ./Firmware/src/App/General.o
+ .text.maquinaGeneral
+                0x00000000      0x184 ./Firmware/src/App/General.o
+ .text.Msj_Display
+                0x00000000        0xc ./Firmware/src/App/General.o
+ .text.Control_Timer
+                0x00000000        0xc ./Firmware/src/App/General.o
+ .text.Teclado_Pantalla
+                0x00000000        0xc ./Firmware/src/App/General.o
+ .bss.estado.7117
+                0x00000000        0x4 ./Firmware/src/App/General.o
+ .debug_info    0x00000000      0x28d ./Firmware/src/App/General.o
+ .debug_abbrev  0x00000000       0xd4 ./Firmware/src/App/General.o
+ .debug_aranges
+                0x00000000       0x38 ./Firmware/src/App/General.o
+ .debug_ranges  0x00000000       0x28 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x1dc ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x898 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x12d ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x5b2 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x7b ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x3a ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0xbb1 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x22c ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x42 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x52 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x78 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x82 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x48c ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x34 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x4c5 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x1b7 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x21b ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x1b9 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x40 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x162 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x94 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0xb8 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x4c ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000      0x328 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x49 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0xca ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x18 ./Firmware/src/App/General.o
+ .debug_macro   0x00000000       0x4c ./Firmware/src/App/General.o
+ .debug_line    0x00000000      0x4ec ./Firmware/src/App/General.o
+ .debug_str     0x00000000    0x10851 ./Firmware/src/App/General.o
+ .comment       0x00000000       0x6f ./Firmware/src/App/General.o
+ .debug_frame   0x00000000       0x90 ./Firmware/src/App/General.o
+ .ARM.attributes
+                0x00000000       0x33 ./Firmware/src/App/General.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Master.o
+ .text          0x00000000        0x0 ./Firmware/src/App/Master.o
+ .data          0x00000000        0x0 ./Firmware/src/App/Master.o
+ .bss           0x00000000        0x0 ./Firmware/src/App/Master.o
+ .bss.Accion    0x00000000        0x4 ./Firmware/src/App/Master.o
+ .bss.Recepcion
+                0x00000000        0x4 ./Firmware/src/App/Master.o
+ .bss.Transmision
+                0x00000000        0x4 ./Firmware/src/App/Master.o
+ .text.maquinaMaestro
+                0x00000000       0xa8 ./Firmware/src/App/Master.o
+ .text.Rx_USB   0x00000000        0xc ./Firmware/src/App/Master.o
+ .text.Tx_USB   0x00000000        0xc ./Firmware/src/App/Master.o
+ .text.PrenderPantalla
+                0x00000000        0xc ./Firmware/src/App/Master.o
+ .bss.estado.7103
+                0x00000000        0x4 ./Firmware/src/App/Master.o
+ .debug_info    0x00000000      0x200 ./Firmware/src/App/Master.o
+ .debug_abbrev  0x00000000       0xd4 ./Firmware/src/App/Master.o
+ .debug_aranges
+                0x00000000       0x38 ./Firmware/src/App/Master.o
+ .debug_ranges  0x00000000       0x28 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x1dc ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x898 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x12d ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x5b2 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x7b ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x3a ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0xbb1 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x22c ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x42 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x52 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x78 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x82 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x48c ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x34 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x4c5 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x1b7 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x21b ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x1b9 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x40 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x162 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x94 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0xb8 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x4c ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000      0x328 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x49 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0xca ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x18 ./Firmware/src/App/Master.o
+ .debug_macro   0x00000000       0x2e ./Firmware/src/App/Master.o
+ .debug_line    0x00000000      0x4a8 ./Firmware/src/App/Master.o
+ .debug_str     0x00000000    0x107cf ./Firmware/src/App/Master.o
+ .comment       0x00000000       0x6f ./Firmware/src/App/Master.o
+ .debug_frame   0x00000000       0x90 ./Firmware/src/App/Master.o
+ .ARM.attributes
+                0x00000000       0x33 ./Firmware/src/App/Master.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Pantalla.o
+ .text          0x00000000        0x0 ./Firmware/src/App/Pantalla.o
+ .data          0x00000000        0x0 ./Firmware/src/App/Pantalla.o
+ .bss           0x00000000        0x0 ./Firmware/src/App/Pantalla.o
+ .bss.T_Teclado_1
+                0x00000000        0x4 ./Firmware/src/App/Pantalla.o
+ .bss.T_Teclado_2
+                0x00000000        0x4 ./Firmware/src/App/Pantalla.o
+ .text.maquinaPantalla
+                0x00000000      0x12c ./Firmware/src/App/Pantalla.o
+ .text.MsjPantalla
+                0x00000000        0xc ./Firmware/src/App/Pantalla.o
+ .text.Selec_Producto
+                0x00000000        0xc ./Firmware/src/App/Pantalla.o
+ .text.Detalle_Producto
+                0x00000000        0xc ./Firmware/src/App/Pantalla.o
+ .bss.estado.7105
+                0x00000000        0x4 ./Firmware/src/App/Pantalla.o
+ .debug_info    0x00000000      0x205 ./Firmware/src/App/Pantalla.o
+ .debug_abbrev  0x00000000       0xd4 ./Firmware/src/App/Pantalla.o
+ .debug_aranges
+                0x00000000       0x38 ./Firmware/src/App/Pantalla.o
+ .debug_ranges  0x00000000       0x28 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x1dc ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x898 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x12d ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x5b2 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x7b ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x3a ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0xbb1 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x22c ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x42 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x52 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x78 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x82 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x48c ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x34 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x4c5 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x1b7 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x21b ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x1b9 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x40 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x162 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x94 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0xb8 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x4c ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000      0x328 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x49 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0xca ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x18 ./Firmware/src/App/Pantalla.o
+ .debug_macro   0x00000000       0x3a ./Firmware/src/App/Pantalla.o
+ .debug_line    0x00000000      0x4e3 ./Firmware/src/App/Pantalla.o
+ .debug_str     0x00000000    0x10809 ./Firmware/src/App/Pantalla.o
+ .comment       0x00000000       0x6f ./Firmware/src/App/Pantalla.o
+ .debug_frame   0x00000000       0x8c ./Firmware/src/App/Pantalla.o
+ .ARM.attributes
+                0x00000000       0x33 ./Firmware/src/App/Pantalla.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .group         0x00000000        0x8 ./Firmware/src/App/Reposo.o
+ .text          0x00000000        0x0 ./Firmware/src/App/Reposo.o
+ .data          0x00000000        0x0 ./Firmware/src/App/Reposo.o
+ .bss           0x00000000        0x0 ./Firmware/src/App/Reposo.o
+ .bss.BOMBA     0x00000000        0x4 ./Firmware/src/App/Reposo.o
+ .data.MSJ      0x00000000        0x4 ./Firmware/src/App/Reposo.o
+ .bss.Solventes
+                0x00000000        0x4 ./Firmware/src/App/Reposo.o
+ .data.NivelAgua
+                0x00000000        0x4 ./Firmware/src/App/Reposo.o
+ .bss.Control   0x00000000        0x4 ./Firmware/src/App/Reposo.o
+ .text.maquinaReposo
+                0x00000000       0xd8 ./Firmware/src/App/Reposo.o
+ .text.CargarAgua
+                0x00000000        0xc ./Firmware/src/App/Reposo.o
+ .text.EnviarMsj
+                0x00000000        0xc ./Firmware/src/App/Reposo.o
+ .text.BajoConsumo
+                0x00000000        0xc ./Firmware/src/App/Reposo.o
+ .data.estado.7107
+                0x00000000        0x4 ./Firmware/src/App/Reposo.o
+ .debug_info    0x00000000      0x222 ./Firmware/src/App/Reposo.o
+ .debug_abbrev  0x00000000       0xe5 ./Firmware/src/App/Reposo.o
+ .debug_aranges
+                0x00000000       0x38 ./Firmware/src/App/Reposo.o
+ .debug_ranges  0x00000000       0x28 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x1dc ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x898 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x12d ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x5b2 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x7b ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x3a ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x2d ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0xbb1 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x22c ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x42 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x52 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x78 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x82 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x48c ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x34 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x4c5 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x1b7 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x10 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x21b ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x1b9 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x40 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x22 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x162 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x94 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0xb8 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x4c ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000      0x328 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x49 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x16 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0xca ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x18 ./Firmware/src/App/Reposo.o
+ .debug_macro   0x00000000       0x46 ./Firmware/src/App/Reposo.o
+ .debug_line    0x00000000      0x4b2 ./Firmware/src/App/Reposo.o
+ .debug_str     0x00000000    0x10803 ./Firmware/src/App/Reposo.o
+ .comment       0x00000000       0x6f ./Firmware/src/App/Reposo.o
+ .debug_frame   0x00000000       0x8c ./Firmware/src/App/Reposo.o
+ .ARM.attributes
+                0x00000000       0x33 ./Firmware/src/App/Reposo.o
  .group         0x00000000        0x8 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(adc_17xx_40xx.o)
  .group         0x00000000        0x8 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(adc_17xx_40xx.o)
  .group         0x00000000        0x8 C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(adc_17xx_40xx.o)
@@ -2765,6 +3179,10 @@ LOAD ./Firmware/src/Driver/Init.o
 LOAD ./Firmware/src/Driver/hid_desc.o
 LOAD ./Firmware/src/Driver/hid_generic.o
 LOAD ./Firmware/src/App/Aplicacion.o
+LOAD ./Firmware/src/App/General.o
+LOAD ./Firmware/src/App/Master.o
+LOAD ./Firmware/src/App/Pantalla.o
+LOAD ./Firmware/src/App/Reposo.o
 LOAD C:\Users\unknown\Documents\LPCWorkspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a
 START GROUP
 LOAD c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a

@@ -16,7 +16,7 @@ int Control;
 
 //#include "funciones.h"
 
-void maquina_estado()
+void maquinaReposo(void)
 {
 		static int estado = CONTROL;
 
@@ -75,7 +75,7 @@ void maquina_estado()
 					estado = GPRS;
 		
 				}
-				if(Control = FIN)
+				if(Control == FIN)
 				{
 					BajoConsumo();
 					estado = BAJO_CONSUMO;

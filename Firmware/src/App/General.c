@@ -8,21 +8,23 @@
 
 #include "General.h"
 
-int EN_RFID 	= 	0 ;
-int EN_Touch 	= 	0 ;
-int EN_USB 		= 	0 ;
-int ID_RFID 	=	0 ;
-int USB_state 	= 	0 ;
-int Accion 		= 	0 ;
-int RFID 		= 	0 ;
-int Tiempo 		= 	0 ;
-int VASO 		= 	0 ;
-int PANTALLA 	= 	0 ;
-extern TimeOut;
-extern Master_ID;
+uint32_t EN_RFID 	= 	0 ;
+uint32_t EN_Touch 	= 	0 ;
+uint32_t EN_USB 	= 	0 ;
+uint32_t ID_RFID 	=	0 ;
+uint32_t USB_state 	= 	0 ;
 
+uint32_t RFID 		= 	0 ;
+uint32_t Tiempo 	= 	0 ;
+uint32_t VASO 		= 	0 ;
 
-void maquina_estado()
+uint32_t TimeOut; //extern
+uint32_t Master_ID; //extern
+
+extern uint32_t Accion;
+extern uint32_t PANTALLA;
+
+void maquinaGeneral()
 {
 		static int estado = REPOSO;
 
@@ -30,7 +32,7 @@ void maquina_estado()
 		{
 			case REPOSO:
 			
-				if(RFID==NULL)
+				if(RFID==0) // NULL
 				{
 					
 					estado = REPOSO;

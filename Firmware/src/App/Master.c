@@ -5,20 +5,13 @@
 *	\author JuanManuelGonzalezGonzalez
 *	\date 03-11-2017 14:55:47
 */
+int accion;
+int MsjPantalla;
+int Recepcion;
+
 
 #include "Master.h"
 
-//#include "funciones.h"
-
-//Implementacion Switch-Case
-
-/**
-*	\fn void maquina_estado()
-*	\brief Implementacion Switch-Case
-*	\details 
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
 void maquina_estado()
 {
 		static int estado = CONECTADO;
@@ -27,21 +20,21 @@ void maquina_estado()
 		{
 			case CONECTADO:
 			
-				if(Accion == Rx())
+				if(Accion == Rx)
 				{
 					
 					estado = RECIBIENDO;
 		
 				}
-				if(Accion == Tx())
+				if(Accion == Tx)
 				{
 					
 					estado = ENVIANDO;
 		
 				}
-				if(Accion == NULL())
+				if(Accion == NULL)
 				{
-					MsjPantalla = "Bienvenido"();
+					MsjPantalla = "Bienvenido";
 					estado = CONECTADO;
 		
 				}
@@ -50,13 +43,13 @@ void maquina_estado()
 			
 			case RECIBIENDO:
 			
-				if(Recepcion != OK())
+				if(Recepcion != OK)
 				{
 					Rx_USB();
 					estado = RECIBIENDO;
 		
 				}
-				if(Recepcion == OK())
+				if(Recepcion == OK)
 				{
 					
 					estado = CONECTADO;
@@ -67,13 +60,13 @@ void maquina_estado()
 			
 			case ENVIANDO:
 			
-				if(Transmision!=OK())
+				if(Transmision!=OK)
 				{
 					Tx_USB();
 					estado = ENVIANDO;
 		
 				}
-				if(Transmision == OK())
+				if(Transmision == OK)
 				{
 					
 					estado = CONECTADO;
@@ -88,150 +81,6 @@ void maquina_estado()
 
 }
 
-//Funciones asociadas a los eventos
-
-/**
-*	\fn int Accion == Rx(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Accion == Rx(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-/**
-*	\fn int Accion == Tx(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Accion == Tx(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-/**
-*	\fn int Recepcion != OK(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Recepcion != OK(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-/**
-*	\fn int Recepcion == OK(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Recepcion == OK(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-/**
-*	\fn int Transmision!=OK(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Transmision!=OK(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-/**
-*	\fn int Transmision == OK(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Transmision == OK(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-/**
-*	\fn int Accion == NULL(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-int Accion == NULL(void)
-{
-	int res = 0 ;
-
-	//Codigo propio de la funcion
-
-
-
-	return res;
-
-}
-
-//Funciones asociadas a las acciones
-
-/**
-*	\fn void Rx_USB(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
 void Rx_USB(void)
 {
 	
@@ -243,14 +92,6 @@ void Rx_USB(void)
 	
 
 }
-
-/**
-*	\fn void Tx_USB(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
 void Tx_USB(void)
 {
 	
@@ -262,14 +103,6 @@ void Tx_USB(void)
 	
 
 }
-
-/**
-*	\fn void MsjPantalla(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
 void MsjPantalla(void)
 {
 	
@@ -282,52 +115,7 @@ void MsjPantalla(void)
 
 }
 
-/**
-*	\fn void PrenderPantalla(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
 void PrenderPantalla(void)
-{
-	
-
-	//Codigo propio de la funcion
-
-
-
-	
-
-}
-
-/**
-*	\fn void PANTALLA = ON(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-void PANTALLA = ON(void)
-{
-	
-
-	//Codigo propio de la funcion
-
-
-
-	
-
-}
-
-/**
-*	\fn void MsjPantalla = "Bienvenido"(void)
-*	\brief Resumen
-*	\details Detalles
-*	\author JuanManuelGonzalezGonzalez
-*	\date 03-11-2017 14:55:47
-*/
-void MsjPantalla = "Bienvenido"(void)
 {
 	
 

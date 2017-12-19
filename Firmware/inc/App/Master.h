@@ -10,9 +10,10 @@
 #define FIRMWARE_INC_APP_MASTER_H_
 
 //Declaracion de constantes
-#define TRUE  1
-#define FALSE  0
-
+#define Rx 		0
+#define Tx		1
+#define Null	2
+#define OK		3
 //declaracion de la maquina
 void maquina_estado(void);
 
@@ -23,20 +24,9 @@ void maquina_estado(void);
 #define 	ENVIANDO	2
 
 //Prototipos de los eventos
-int Accion == Rx(void);
-int Accion == Tx(void);
-int Recepcion != OK(void);
-int Recepcion == OK(void);
-int Transmision!=OK(void);
-int Transmision == OK(void);
-int Accion == NULL(void);
 
 //Prototipos de las acciones
-void Rx_USB(void);
-void Tx_USB(void);
 void MsjPantalla(void);
 void PrenderPantalla(void);
-void PANTALLA = ON(void);
-void MsjPantalla = "Bienvenido"(void);
 
 #endif /*FIRMWARE_INC_APP_MASTER_H_*/

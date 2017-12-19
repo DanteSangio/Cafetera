@@ -10,8 +10,13 @@
 #define FIRMWARE_INC_APP_REPOSO_H_
 
 //Declaracion de constantes
-#define TRUE  1
-#define FALSE  0
+#define NivelMax 99
+#define NivelMinimo 10
+#define Faltante 2
+#define FIN 3
+#define NULL 4
+#define OFF 0
+#define ON 1
 
 //declaracion de la maquina
 void maquina_estado(void);
@@ -24,20 +29,9 @@ void maquina_estado(void);
 #define 	CONTROL	3
 
 //Prototipos de los eventos
-int NivelAgua <= NivelMinimo(void);
-int NivelAgua!=NivelMax(void);
-int NivelAgua==NivelMax(void);
-int Solventes == Faltante(void);
-int MSJ(void);
-int !MSJ(void);
-int Control = FIN(void);
 
 //Prototipos de las acciones
-void Nivel_Agua(void);
-void Nivel_Solventes(void);
-void BOMBA = ON(void);
 void CargarAgua(void);
-void BOMBA = OFF(void);
 void EnviarMsj(void);
 void BajoConsumo(void);
 

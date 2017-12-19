@@ -10,8 +10,11 @@
 #define FIRMWARE_INC_APP_PANTALLA_H_
 
 //Declaracion de constantes
-#define TRUE  1
-#define FALSE  0
+#define OFF			0
+#define ON			1
+#define Cancelar	2
+#define Aceptar		3
+
 
 //declaracion de la maquina
 void maquina_estado(void);
@@ -24,17 +27,11 @@ void maquina_estado(void);
 #define 	TECLADO_2	3
 
 //Prototipos de los eventos
-int PANTALLA == OFF(void);
-int PANTALLA == ON(void);
-int EN_Touch == ON(void);
-int Accion == Aceptar(void);
-int Accion == Cancelar(void);
 
 //Prototipos de las acciones
-void PANTALLA = OFF(void);
 void MsjPantalla(void);
 void Selec_Producto(void);
 void Detalle_Producto(void);
-void PANTALLA = ON(void);
+
 
 #endif /*FIRMWARE_INC_APP_PANTALLA_H_*/

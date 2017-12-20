@@ -17,7 +17,6 @@ uint32_t EN_USB 	= 	0 ;
 uint32_t ID_RFID 	=	0 ;
 uint32_t USB_state 	= 	0 ;
 
-
 uint32_t Tiempo 	= 	0 ;
 uint32_t VASO 		= 	0 ;
 

@@ -9,11 +9,11 @@
 #ifndef FIRMWARE_INC_APP_GENERAL_H_
 #define FIRMWARE_INC_APP_GENERAL_H_
 
-#include "chip.h"
+#include "Aplicacion.h"
 
 //Declaracion de constantes
-#define OFF			0
-#define ON			1
+//#define OFF			0
+//#define ON			1
 //#define NULL		2
 #define Conect		3
 #define FIN			4
@@ -31,7 +31,7 @@ void maquinaGeneral(void);
 #define 	DOSIFICACION	3
 
 //Prototipos de las funciones
-void Control(void);
+//void Control(void);
 void Msj_Display(void);
 void Com_USB(void);
 void Control_Timer(void);

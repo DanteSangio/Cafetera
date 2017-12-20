@@ -122,9 +122,11 @@
 /*	Definiciones pines GSM	*/
 #define GSM_TX_PORT		((uint8_t) 0)
 #define GSM_RX_PORT		((uint8_t) 0)
+#define GSM_PW_PORT		((uint8_t) 0)
 
 #define GSM_TX_PIN		((uint8_t) 10)
 #define GSM_RX_PIN		((uint8_t) 11)
+#define GSM_PW_PIN  	((uint8_t) 19)
 /*	Fin Definiciones pines GSM	*/
 
 /*	Definiciones pines servo motores	*/

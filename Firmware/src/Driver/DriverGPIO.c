@@ -67,6 +67,8 @@ void InitGPIOs (void)
 		/*Configuracion de los pines de GSM*/
 		Chip_IOCON_PinMux (LPC_IOCON , PORT(GSM_TX_PORT) , PIN(GSM_TX_PIN), IOCON_MODE_INACT , IOCON_FUNC1);
 		Chip_IOCON_PinMux (LPC_IOCON , PORT(GSM_RX_PORT) , PIN(GSM_RX_PIN), IOCON_MODE_INACT , IOCON_FUNC1);
+		Chip_IOCON_PinMux (LPC_IOCON , PORT(GSM_PW_PORT) , PIN(GSM_PW_PIN), IOCON_MODE_INACT , IOCON_FUNC0);
+
 		/*Fin de Configuracion de los pines de GSM*/
 
 		/*Configuracion de los pines de servo motores*/
@@ -168,6 +170,7 @@ void InitGPIOs (void)
 		Chip_GPIO_SetDir (LPC_GPIO , PORT(GSM_TX_PORT) , PIN(GSM_TX_PIN) , OUTPUT);
 		Chip_GPIO_SetDir (LPC_GPIO , PORT(GSM_RX_PORT) , PIN(GSM_RX_PIN) , OUTPUT);
 		*/
+		Chip_GPIO_SetDir (LPC_GPIO , PORT(GSM_PW_PORT) , PIN(GSM_PW_PIN) , OUTPUT);
 		/*Fin de Configuracion de los pines de GSM*/
 
 		/*Configuracion de los pines de servo motores*/
@@ -219,6 +222,10 @@ void InitGPIOs (void)
 		/*Configuracion de los pines de led indicador*/
 		Chip_GPIO_SetPinState (LPC_GPIO, LED_PORT, LED_PIN, OFF);
 		/*Fin de Configuracion de los pines de led indicador*/
+
+		/*Configuracion de los pines del modulo GMS*/
+		Chip_GPIO_SetPinState (LPC_GPIO, GSM_PW_PORT, GSM_PW_PIN, OFF);
+		/*Fin de Configuracion de los pines del modulo GMS*/
 
 	/*Fin de Pongo el nivel inicial de cada pin*/
 }

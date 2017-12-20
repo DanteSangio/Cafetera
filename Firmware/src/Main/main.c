@@ -17,9 +17,27 @@ SemaphoreHandle_t 	Semaforo_2;
 
 TaskHandle_t		Handle_Tarea_Lectura;
 TaskHandle_t		Handle_Tarea_Escritura;
+TaskHandle_t 		Handle_Tarea_MaquinaGeneral;
+TaskHandle_t 		Handle_Tarea_MaquinaMaestro;
+TaskHandle_t 		Handle_Tarea_MaquinaPantalla;
+TaskHandle_t 		Handle_Tarea_MaquinaReposo;
+TaskHandle_t 		Handle_Tarea_RFID;
 
 QueueHandle_t 		Cola_1;
 QueueHandle_t 		Cola_2;
+
+SemaphoreHandle_t Semaphore_GSM;
+SemaphoreHandle_t Semaphore_General;
+SemaphoreHandle_t Semaphore_Maestro;
+SemaphoreHandle_t Semaphore_Pantalla;
+SemaphoreHandle_t Semaphore_Reposo;
+
+QueueHandle_t		Cola_Rx_GSM;
+QueueHandle_t		Cola_Nro_GSM;
+QueueHandle_t		Cola_InfoRx_GSM;
+QueueHandle_t		Cola_Aux_GSM;
+QueueHandle_t		Cola_Msj_GSM;
+QueueHandle_t		Cola_RFID;
 
 /*Estructuras*/
 typedef struct
@@ -33,6 +51,9 @@ LED_GPIO LED_Struct;
 
 /*Tareas*/								///// LAS TAREAS LAS QUIERO COLOCAR EN EL ARCHIVO APLICACION.C
 										///// PERO NO ME DEJA, VER PORQUÉ...
+
+//static void vTaskMaquinaGeneral(void *);
+
 /* LED1 toggle thread */
 static void vTask1(void *pvParameters)
 {
@@ -108,6 +129,48 @@ static void vTaskLectura(void *pvParameters)
 	}
 }
 
+/* Inputs read thread */
+static void vTaskRFID(void *pvParameters)
+{
+	uint32_t var = 0;
+
+	while (1)
+	{
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_1_PORT) , PIN(IR_1_PIN)) == (bool)PRESSED )
+		{
+			var = 1;
+		}
+
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_2_PORT) , PIN(IR_2_PIN)) == (bool)PRESSED )
+		{
+			var = 2;
+		}
+
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_3_PORT) , PIN(IR_3_PIN)) == (bool)PRESSED )
+		{
+			var = 3;
+		}
+
+		if( Chip_GPIO_GetPinState( LPC_GPIO , PORT(IR_4_PORT) , PIN(IR_4_PIN)) == (bool)PRESSED )
+		{
+			var = 4;
+		}
+
+		if( var != 0 )
+		{
+			xQueueSendToBack( Cola_RFID , &var , portMAX_DELAY );
+
+			xSemaphoreGive(Semaphore_General);
+
+			var = 0;
+
+			vTaskDelay( pdMS_TO_TICKS(200) );
+		}
+
+		vTaskDelay( pdMS_TO_TICKS(50) );
+	}
+}
+
 /* Led RGB thread */
 static void xTaskEscritura(void *pvParameters)
 {
@@ -165,21 +228,35 @@ int main(void)
 	vSemaphoreCreateBinary(Semaforo_1);
 	vSemaphoreCreateBinary(Semaforo_2);
 
+	vSemaphoreCreateBinary(Semaphore_GSM);
+	vSemaphoreCreateBinary(Semaphore_General);
+	vSemaphoreCreateBinary(Semaphore_Maestro);
+
 	/*Toma del Semaforo*/
 	xSemaphoreTake(Semaforo_1 , portMAX_DELAY );
 
 	/*Creacion de las colas del Sistema Operativo*/
-	Cola_1 = xQueueCreate( 5 , sizeof(LED_GPIO) );
+	Cola_1 = xQueueCreate( 1 , sizeof(LED_GPIO) );
 	Cola_2 = xQueueCreate( 5 , sizeof(LED_GPIO) );
+
+	Cola_Rx_GSM 	= xQueueCreate( 1 , sizeof(uint32_t) );
+	Cola_Msj_GSM	= xQueueCreate( 1 , sizeof(uint32_t) );
+	Cola_Nro_GSM 	= xQueueCreate( 1 , sizeof(uint32_t) );
+	Cola_InfoRx_GSM = xQueueCreate( 1 , sizeof(uint32_t) );
+	Cola_Aux_GSM 	= xQueueCreate( 1 , sizeof(uint32_t) );
+
+	Cola_RFID		= xQueueCreate( 1 , sizeof(uint32_t) );
 
 	xQueueSendToBack( Cola_1 , &LED_Struct , portMAX_DELAY );
 	xQueueReceive( Cola_1 , &LED_Struct , portMAX_DELAY );
 
 	/*Creación de las tareas necesarias para el Sistema Operativo*/
+
 	xTaskCreate(	vTask1,
 					(char *) "vTask1",
 					configMINIMAL_STACK_SIZE,
-					NULL, (tskIDLE_PRIORITY + 1UL),
+					NULL,
+					(tskIDLE_PRIORITY + 1UL),
 					(xTaskHandle *) NULL
 	);
 
@@ -205,6 +282,46 @@ int main(void)
 					&LED_Struct,
 					(tskIDLE_PRIORITY + 1UL),
 					(xTaskHandle *) Handle_Tarea_Escritura
+	);
+
+	xTaskCreate(	vTaskRFID,
+					(char *) "vTaskRFID",
+					configMINIMAL_STACK_SIZE,
+					NULL,
+					(tskIDLE_PRIORITY + 1UL),
+					(xTaskHandle *) Handle_Tarea_RFID
+	);
+
+	xTaskCreate(	vTaskMaquinaGeneral,
+					(char *) "vTaskMaquinaGeneral",
+					configMINIMAL_STACK_SIZE,
+					NULL,
+					(tskIDLE_PRIORITY + 1UL),
+					(xTaskHandle *) Handle_Tarea_MaquinaGeneral
+	);
+
+	xTaskCreate(	vTaskMaquinaMaestro,
+					(char *) "vTaskMaquinaMaestro",
+					configMINIMAL_STACK_SIZE,
+					NULL,
+					(tskIDLE_PRIORITY + 1UL),
+					(xTaskHandle *) Handle_Tarea_MaquinaMaestro
+	);
+
+	xTaskCreate(	vTaskMaquinaPantalla,
+					(char *) "vTaskMaquinaPantalla",
+					configMINIMAL_STACK_SIZE,
+					NULL,
+					(tskIDLE_PRIORITY + 1UL),
+					(xTaskHandle *) Handle_Tarea_MaquinaPantalla
+	);
+
+	xTaskCreate(	vTaskMaquinaReposo,
+					(char *) "vTaskMaquinaReposo",
+					configMINIMAL_STACK_SIZE,
+					NULL,
+					(tskIDLE_PRIORITY + 1UL),
+					(xTaskHandle *) Handle_Tarea_MaquinaReposo
 	);
 
 	/*Lanzamiento del Manejador del Sistema Operativo*/

@@ -9,12 +9,13 @@
 #define FIRMWARE_INC_PRIMITIVE_PRIMITIVAIR_H_
 
 #include "chip.h"
+#include "DriverGPIO.h"
 
-uint8_t estadoIR0(void);
-uint8_t estadoIR1(void);
-uint8_t estadoIR2(void);
-uint8_t estadoIR3(void);
-uint8_t estadoIR4(void);
-uint8_t estadoIR5(void);
+uint32_t estadoIR0(void);
+uint32_t estadoIR1(void);
+uint32_t estadoIR2(void);
+uint32_t estadoIR3(void);
+uint32_t estadoIR4(void);
+uint32_t estadoIR5(void);
 
 #endif /* FIRMWARE_INC_PRIMITIVE_PRIMITIVAIR_H_ */

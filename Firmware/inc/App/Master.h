@@ -9,13 +9,13 @@
 #ifndef FIRMWARE_INC_APP_MASTER_H_
 #define FIRMWARE_INC_APP_MASTER_H_
 
-#include "chip.h"
+#include "Aplicacion.h"
 
 //Declaracion de constantes
 #define Rx 		0
 #define Tx		1
 #define Null	2
-#define OK		3
+//#define OK		3
 //declaracion de la maquina
 void maquinaMaestro(void);
 

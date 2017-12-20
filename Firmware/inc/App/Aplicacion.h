@@ -19,6 +19,11 @@
 
 #include "Init.h"
 
+#include "General.h"
+#include "Master.h"
+#include "Pantalla.h"
+#include "Reposo.h"
+
 #include "PrimitivaTFT.h"
 #include "PrimitivaSerie.h"
 #include "PrimitivaIR.h"
@@ -35,6 +40,20 @@
 #include "DriverTimer.h"
 #include "DriverUSB.h"
 
+void vTaskMaquinaGeneral(void *);
+void vTaskMaquinaMaestro(void *);
+void vTaskMaquinaPantalla(void *);
+void vTaskMaquinaReposo(void *);
+
+/*
+SemaphoreHandle_t Semaphore_GSM;
+
+QueueHandle_t		Cola_Rx_GSM;
+QueueHandle_t		Cola_Nro_GSM;
+QueueHandle_t		Cola_InfoRx_GSM;
+QueueHandle_t		Cola_Aux_GSM;
+QueueHandle_t		Cola_Msj_GSM;
+*/
 /*Definiciones de las macros*/
 
 #define SMS				0		//el modulo GSM esta deshabilitado, me manda por la uart0 y uart1 un mensaje igual que el sms que mandaria el GSM, por la uart1 y uart0 puedo escribir para simular la entrada de un sms
@@ -47,6 +66,8 @@
 #define ALL_LEDs	5000
 
 #define NUMERO_TELEFONO	"5491131673996"	//	Dante = 1563560077
+
+//#define TimeOut		(5)
 
 /*Estados de la maquina de GSM*/
 #define DISPONIBLE 							0
@@ -73,6 +94,7 @@ extern uint8_t flagMensajeRecibidoGSM;
 void InicializarProyecto(void);
 void InicializarGSM(void);
 void InicializarVariables(void);
+uint32_t recibirDatosGSM(uint32_t*);
 
 /*Maquinas de estado*/
 void maquinaGSM(void);
